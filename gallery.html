@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ambag ko</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .home{
+            position: fixed;
+            background-color: rgb(255, 155, 0);
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 5px;
+            top: 30px;
+            left: 2%;
+            font-family: sans-serif;
+            font-weight: bold;
+            transition: .3s;
+        }
+        .home:hover{
+            transform: scale(1.2);
+            color: rgb(255, 80, 0);
+            border-radius: 10px;
+        }
+        .gallery1{
+            background-image: url(images/24.png);
+        }
+        .gallery2{
+            background-image: url(images/25.png);
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+        .slides{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            color: #fff;
+            scroll-snap-align: start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gallery1 slides">
+            <a href="index.html" class="home">HOME</a>
+        </div>
+        <div class="gallery2 slides"></div>
+    </div>
+</body>
+</html>
